@@ -1,0 +1,6 @@
+        Checklist structure
+
+ Checklist is defined as a list of tasks that need to be completed. A checklist organizes items in a systematic manner and provides an overview of what tasks we need to accomplish
+ Checklists are arranged very simply. Any of them contains a list of blocks, sections, pages, and other elements that should be tested
+ One item = one check
+ Completed items are marked with statuses, for example: “Passed”, “Failed”, “Blocked”, “Skipped”, “Not run”
