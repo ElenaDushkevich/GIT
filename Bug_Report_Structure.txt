@@ -1,0 +1,28 @@
+   Bug report structure
+ 
+ID - Unique identification number of the bug report
+Summary - Description of the problem, which allows to quickly navigate the issue and describe it with simple “What? Where? When?"
+Severity - describes the effect of the defect on the application's performance, for example:
+       Blocker. An error that causes the app to fail. 
+       Critical. A critical defect that causes some key functionality to fail. Major. A crucial error that indicates a deviation from business logic or disrupts the program, but doesn't have a vital impact on the app.
+       Minor. A minor defect that doesn't violate the application's functionality when tested, but influences the expected result. A design error would be one example.
+       Trivial. A bug that doesn't affect the functionality or operation of the app but can be detected visually, for example, a typo in the text.
+Priority - specifies the order in which the problem should be fixed, for example      ASAS (as soon as possible)
+      High
+      Normal
+      Low
+Description - in this part, the header field is considered in detail so that we can describe the problem without any restrictions. It also specifies additional conditions, such as the frequency of the error, the randomness of the error and the circumstances that may cause it.
+Environment - an application could have inconsistent behavior depending on the situation, so here we need to describe in detail all the conditions in which a bug is reproduced, for example:
+- Device manufacturer and model number
+- OS version
+- Application version
+- Network connectivity
+- Screen orientation
+- Browser
+Workaround (if it exists) - The ability to bypass the bug.
+Precondition (if it need).
+Steps to reproduce - This item should contain steps that describe the entire path of reproducing the bug.
+Actual result - This field describes the actual effect of the bug, It's quite important to write a clear description of the actual result. In most cases, it coincides with the Summary.
+Expected result - what we predicted as normal functionality under the given conditions.
+Attachments - Attachments generally include: screenshots, a log.txt file, or a file that a tester was trying to import.The goal is to gather as much documentation as possible.
+   
