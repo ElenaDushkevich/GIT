@@ -1,0 +1,80 @@
+TXT
+ 1. Создать внешний репозиторий c названием TXT.
+https://github.com/ => кликнуть [+] на хедере, кликнуту 'New repository' link => заполнить появившиеся поля => нажать [Create]
+
+ 2. Клонировать репозиторий TXT на локальный компьютер.
+скопировать ssh key созданного репозитория, с помощью терминала перейти в нужное место на компьютере (cd)  => git clone ssh key (вставляем скопированный ключ) 
+
+ 3. Внутри локального TXT создать файл “new.txt”.
+- cd JSON переходим в папку с репозиторием на локальном компьютере
+- touch new.txt
+
+ 4. Добавить файл под гит.
+git add new.txt
+
+ 5. Закоммитить файл.
+git commit -m "add new empty file"
+
+ 6. Отправить файл на внешний GitHub репозиторий.
+git push
+
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+- viw new.json
+- i (insert)
+- name: Elena,
+  age: 32,
+  pets: 1,
+  salary: 2000 usd
+- esc => :wq => Enter
+
+ 8. Отправить изменения на внешний репозиторий.
+git add .
+git commit -m "added info about person"
+git push
+
+ 9. Создать файл preferences.txt
+touch preferences.txt
+
+ 10. В файл preferences.txt добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+- cat >> preferences.txt
+- preferences:
+1) film: ratatouille,
+2) TV series: unbelivable,
+3) favourite food: pasta carbonara,
+4) favourite season: spring,
+5) country for visit: Australia
+
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+cat >> skills.txt
+- Skills: Terminal, Git, Postman, Mobile testing, Charles, SQL,	Android Studio, Dev Tools
+ 
+ 12. Сделать коммит в одну строку.
+git config --global --replace-all alias.ac '!git add -A && git commit -m "$1" - создаем собственную краткую комманду для одновременного индексирования файла и коммита 
+git ac "added two files with info about preferences and skills"
+
+ 13. Отправить сразу 2 файла на внешний репозиторий.
+git push
+
+ 14. На веб интерфейсе создать файл bug_report.txt.
+Add file => Create new file => bug_report.txt
+
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+- добавить комментарии
+- кликнуть на [Commit new file]
+
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+ Кликнуть [Edit this file]
+- Bug_report_id: 1,
+ Summary: Engineering calculator is displayed without the buttons required for this type of calculator,
+ Severity: Major,
+ Description: When changing a regular calculator to an engineering one, additional buttons that an engineering calculator should have, do not appear on the screen,
+ Steps to reproduce: 1. Open calc.exe, 2. Click 'Выбор', 3. Сlick 'Инженерный',
+ Actual result: Engineering calculator is displayed without the buttons required for this type of calculator,
+ Expected result: Engineering calculator is displayed with the buttons required for this type of calculator
+
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+- добавить комментарии
+- кликнуть на [Commit changes]
+
+ 18. Синхронизировать внешний и локальный репозиторий TXT
+git pull
